@@ -1,0 +1,498 @@
+/* styles.css */
+
+* {
+  font-family: 'Roboto';
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: white;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    color: black;   
+}
+
+.blink {
+  padding: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.blink h1 {
+  animation: blink 2s linear infinite;
+}
+
+.blink p {
+  font-size: 26px;
+  font-family: cursive;
+  color: #fff;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu {
+  display: block; 
+}
+
+.hamburger-menu {
+  display: none; 
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+  
+  .hamburger-menu {
+      display: block; 
+  }
+
+  /* .menu.show {
+    display: block !important;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+  
+.navbar-brand {
+    display: inline-block; 
+    margin-right: 20px; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.navbar-brand h1 {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: black; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+  .banner {
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  
+  .banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .banner p {
+    font-size: 1.2em;
+    color: black;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px;
+}
+
+.testimonial-slide {
+  min-width: 300px; 
+  margin-right: 20px; 
+  scroll-snap-align: start;
+  flex: 0 0 auto; 
+}
+.owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 50px;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .box-sizing {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    padding: 20px; 
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .testimonial-slide img {
+    margin: 0 auto; 
+    width: 150px; 
+    height: auto; 
+    border-radius: 50%; 
+  }
+  
+  .name-customer {
+    width: 100%; 
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
+    font-size: 30px;
+  }
+    .text-testimonial {
+        background-color: #f2f2f2; 
+        padding: 15px; 
+        border-radius: 10px; 
+        margin-top: 10px; 
+        max-width: 500px; 
+  }
+  
+  .paragraf-testimonial {
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+.carousel-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #555;
+} 
+  
+  .contact {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .contact-form h2 {
+    font-size: 35px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input,
+  button {
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+.notification {
+    display: none; 
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6; 
+    color: #3c763d; 
+    border-radius: 4px; 
+    animation: slide-up 0.5s ease; 
+}
+
+@keyframes slide-up {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.blinkingCursor {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: white;
+  color: maroon;
+  font-weight: 600;
+  border: 3px solid maroon;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+  border-radius: 10px;
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+footer {
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+        
+}
+
+.form-group select {
+    width: 108%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Contoh */
+
+.box-content {
+  height: auto; 
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  pointer-events: none;
+  background: white;
+  border: 2px solid gray; 
+  transition: 0.3s;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px; 
+  height: 400px; 
+  margin: 0 10px; 
+}
+
+.box-content:after {
+  display: none; 
+}
+
+.gambar-promo {
+  max-width: 100%; 
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  margin-top: -15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold; 
+  margin-bottom: 50px; 
+}
+
+
+.promo-details {
+  text-align: center;
+  padding: 20px; 
+}
+
+.route-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.route-info {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: #333;
+}
+
+.price {
+  color: rgb(255, 94, 31);
+  font-size: 18px;
+  font-weight: 800px;
+}
+
+.pesan-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pesan-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .landing-inner-content {
+    overflow-x: scroll; /* Menggunakan scroll horizontal pada tampilan mobile */
+    white-space: nowrap; /* Mencegah wrapping kotak konten */
+  }
+
+  .box-visible {
+    display: inline-block; /* Menampilkan kotak konten secara berdampingan */
+    vertical-align: top; /* Menjaga keberadaan kotak konten di atas */
+    width: calc(100% - 20px); /* Lebar kotak konten adalah 100% lebar layar dikurangi margin */
+    margin: 0 10px; /* Menambahkan margin di sekitar kotak konten */
+  }
+  
+}
+
+
+
+.btn-banner {
+  background-color: white;
+  color: maroon;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid maroon;
+  border-radius: 10px;
+  padding: 10px 20px; 
+  text-align: center; 
+  cursor: pointer;
+  display: block;
+  margin: 15px auto; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+  width: 15%;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-banner {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+/* Tambahkan gaya CSS untuk animasi */
+.items {
+  display: flex;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
